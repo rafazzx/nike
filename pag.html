@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Página principal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f8f8f8;
+            }
+            #pp {
+                height: 120px;
+                width: 100%;
+                background-color: #ffffff;
+                position: relative;
+                ;
+            }
+
+            ul {
+                list-style: none;
+               
+            }
+            #tn,#a95,#tl,#s1,#s2,#s3 {
+                width: 240px;
+                display: inline-block;
+                text-align: left;
+                margin: 16px;
+                font-weight: 400px;
+                font-style: normal;
+                font-family: "Momo Trust Display", sans-serif;
+                margin-right: 90px;
+            }
+            #tn img,#a95 img,#tl img,#s1 img,#s2 img,#s3 img {
+                width: 345px;
+                height: auto;
+                display: block;             
+            }
+
+           
+
+            .cinza {
+                color: gray;
+            }
+
+            #logo {
+                margin-top: 30px;
+                margin-left: 30px
+
+            }
+
+            #lista1 {
+                  text-align: center;
+                  margin-top: -45px;
+                 
+            }
+            #lista1 li {
+                display: inline-block;
+                margin-right: 25px;
+                font-weight: 400px;
+                font-style: normal;
+                font-family: "Momo Trust Display", sans-serif;
+                text-align: center;
+            }
+            #lista1 li a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                
+                padding: 10px 15px;
+                border-radius: 5px;
+            }
+
+            #lista1 li a:hover {
+                background-color: rgb(243, 243, 243);
+            }
+
+            #perfil {
+                width: 60px;
+                height: auto;
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                border-radius: 50%;
+
+            }
+            #pe {
+                font-family: "Momo Trust Display", sans-serif;
+                border: 1px solid black;
+                color: black;
+                border-radius: 10px;
+                height: 30px;
+                width: 350px;
+                display: block;
+                margin: 0px auto ;
+                               
+            }
+
+            #lista2 {
+                float: inline-end;
+                float: right;
+                margin-top: 0px;
+                
+            }
+
+            #lista2 li {
+                float: right;
+                margin-right: 5px;
+                font-weight: 400px;
+                font-style: normal;
+                font-family: "Momo Trust Display", sans-serif;
+                text-decoration: none;
+            }
+
+            #lista2 li a{
+                margin-top: 5px;
+                padding-bottom: 10px;
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                float: right;
+                padding: 10px 15px;
+                border-radius: 5px;
+                position: absolute;
+                right: 5px; 
+                width: 110px;
+                
+            }
+
+            #lista2 li a :nth-child(2) {
+                right: 5px;
+                
+                
+            }   
+
+            #lista2 li a:hover {
+                background-color: rgb(255, 255, 255);
+                }
+                #login[hidden] { display: none; }
+               
+                li:hover #login,#perfil:hover + #login,#login:hover {
+                    display: block;
+                }
+            
+
+            #login {
+                right: 10px;
+                position: absolute;
+                background-color: rgb(241, 241, 241);
+                width: 150px;
+                height: 95px;
+                top: 62px;
+                border-radius: 10px;
+                
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="pp">
+            <img src="imagens/logo.svg" id="logo">
+            
+            
+                <li><img src="imagens/pfp.webp" id="perfil">
+                    <div id="login" >
+                        <ul id="lista2" >
+                            <li><a href="gg1/registrar.html">registrar-se</a></li><br>
+                            <li style="margin-top: 22px;"><a href="gg1/conta.html">login</a></li>
+                        </ul>
+                        
+                    </div>
+                </li>
+            </ul>
+            <ul id="lista1">
+                <li><a href="" id="produtos2">produtos</a>
+                    <ul hidden>
+                        <li><a href="">Calçados</a></li>
+                        <li><a href="">Camisetas</a></li>
+                        <li><a href="">Acessórios</a></li>
+                    </ul>
+                </li>                
+                    <li><a href="">sobre nós</a></li>
+                    <li><a href="">contato</a></li>
+            </ul>
+                <input type="text" placeholder="Pesquisar..."  id="pe">
+            
+        </div>
+
+        <container id="tenis">
+        <div id="a95" class="col-sm-3">
+            <a href=""  style="text-decoration:none; color:black;">
+                <img src="imagens/95.avif"><br>
+                <h2>Air Max 95</h2>
+                <h3>R$799,90  <span class="cinza"><s>R$899,90</s></span></h3>
+                <h4 style="color: rgb(116, 150, 66);">Cupom: AIRMAXDAY20</h4>
+            </a>
+        </div>
+
+        <div id="tl" class="col-sm-3">
+            <a href=""  style="text-decoration:none; color:black;">
+                <img src="imagens/TL.avif"><br>
+                <h2>Air Max Tl</h2>
+                <h3>R$1299,90 <span class="cinza"><s>R$1399,90</s></span></h3>
+                <h4 style="color: rgb(116, 150, 66);">Cupom: AIRMAXDAY20</h4>
+            </a>
+        </div>
+
+        <div id="tn" class="col-sm-3">
+            <a href="/gg/produtos/tn.html"  style="text-decoration:none; color:black;">
+                <img src="imagens/hyper blue.avif"><br>
+                <h2>Air Max Plus Tn Hyper Blue</h2>
+                <h3>R$899,90 <span class="cinza"><s>R$999,90</s></span></h3>
+                <h4 style="color: rgb(116, 150, 66); ">Cupom: AIRMAXDAY20</h4>
+            </a>
+        </div>
+        
+        </container>
+        <container id="shorts">
+        <div id="s1" class="col-sm-3">
+            <a href=""  style="text-decoration:none; color:black;">
+                <img src="imagens/shorts 1.avif"><br>
+                <h2>Air Max Plus Tn Hyper Blue</h2>
+                <h3>R$229,90 <span class="cinza"><s>R$289,90</s></span></h3>
+                <h4 style="color: rgb(116, 150, 66);">Cupom: AIRMAXDAY20</h4>
+            </a>
+        </div> 
+        <div id="s2" class="col-sm-3">
+            <a href=""  style="text-decoration:none; color:black;">
+                <img src="imagens/shorts 2.avif"><br>
+                <h2>Air Max Plus Tn Hyper Blue</h2>
+                <h3>R$249,90 <span class="cinza"><s>R$279,90</s></span></h3>
+                <h4 style="color: rgb(116, 150, 66);">Cupom: AIRMAXDAY20</h4>
+            </a>
+
+            <div id="s3" class="col-sm-3">
+            <a href=""  style="text-decoration:none; color:black;">
+                <img src="imagens/shorts 3.avif"><br>
+                <h2>Air Max Plus Tn Hyper Blue</h2>
+                <h3>R$179,90 <span class="cinza"><s>R$199,90</s></span></h3>
+                <h4 style="color: rgb(116, 150, 66);">Cupom: AIRMAXDAY20</h4>
+            </a>
+        </div>
+        </div>
+        
+
+    </container>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
